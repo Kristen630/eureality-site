@@ -1,12 +1,13 @@
 :root {
-  --paper: #FBFAF6;
-  --ink: #1B1D1B;
-  --muted: #5D615B;
-  --green: #1E4A38;
-  --spark: #86C232;
-  --line: #E5E3D8;
+  --paper: #E7E7DF;
+  --ink: #262924;
+  --muted: #5C5F58;
+  --green: #3C4A1F;
+  --spark: #1EC81E;
+  --line: #CFCFC5;
   --serif: "Fraunces", serif;
   --sans: "Instrument Sans", -apple-system, sans-serif;
+  --body: "PT Serif", "Lucida Bright", Georgia, serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -17,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--body);
   font-size: 17px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -130,9 +131,9 @@ footer .links a { margin-right: 18px; }
   nav a { margin-left: 14px; }
 }
 
-.about { display: grid; grid-template-columns: 160px 1fr; gap: 28px; align-items: start; }
+.about { display: grid; grid-template-columns: 240px 1fr; gap: 28px; align-items: start; }
 .portrait {
-  width: 160px; height: 160px; object-fit: cover;
+  width: 240px; height: 300px; object-fit: cover;
   border-radius: 6px; background: var(--line);
 }
 .langs { font-size: 13px; letter-spacing: 0.08em; line-height: 2; color: var(--muted); }
@@ -140,3 +141,5 @@ footer .links a { margin-right: 18px; }
   .about { grid-template-columns: 1fr; }
   .portrait { width: 128px; height: 128px; }
 }
+
+nav a, .eyebrow, .feed .tag, .feed .date, .stamp, .langs, footer, .series-list .soon-tag { font-family: var(--sans); }
